@@ -3,7 +3,7 @@ def boolean call () {
 
     while (! isActive) {
         try {
-            def get = new URL("http://localhost:8081/api/greetings").openConnection();
+            def get = new URL("http://localhost:8081").openConnection();
             def getRC = get.getResponseCode();
             if (getRC.equals(200)) {
                 println("connection open");
