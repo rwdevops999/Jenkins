@@ -1,4 +1,4 @@
-def call (): boolean {
+def boolean call () {
     def get = new URL("http://localhost:8081/api/greetings").openConnection();
     def getRC = get.getResponseCode();
     if (getRC.equals(200)) {
